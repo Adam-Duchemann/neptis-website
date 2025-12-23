@@ -7,7 +7,7 @@
     <div class="nav-container">
       <!-- Logo -->
       <a href="/" class="logo">
-        <img src="/images/logo.png" alt="Neptis" class="logo-img" />
+        <img src="/images/logo.png" alt="" class="logo-img" aria-hidden="true" />
         <span>Neptis</span>
       </a>
 

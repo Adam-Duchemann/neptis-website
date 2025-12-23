@@ -156,7 +156,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-text-primary);
   padding: 4px 14px;
   border-radius: var(--radius-pill);
   font-size: 11px;

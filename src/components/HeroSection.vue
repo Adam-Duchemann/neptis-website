@@ -94,13 +94,16 @@
                   </div>
 
                   <!-- Slide indicators -->
-                  <div class="slide-indicators">
+                  <div class="slide-indicators" role="tablist" aria-label="Lesson slides">
                     <button
                       v-for="i in 3"
                       :key="i"
                       class="indicator"
                       :class="{ active: currentSlide === i - 1 }"
                       @click="currentSlide = i - 1"
+                      :aria-label="`Go to slide ${i}`"
+                      :aria-selected="currentSlide === i - 1"
+                      role="tab"
                     ></button>
                   </div>
                 </div>

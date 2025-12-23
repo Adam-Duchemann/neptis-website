@@ -4,7 +4,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="/" class="footer-logo">
-            <img src="/images/logo.png" alt="Neptis" class="logo-img" />
+            <img src="/images/logo.png" alt="" class="logo-img" aria-hidden="true" />
             <span>Neptis</span>
           </a>
           <div class="tagline-poem">
@@ -16,7 +16,7 @@
 
         <div class="footer-links">
           <div class="link-group">
-            <h4>Languages</h4>
+            <h3 class="link-title">Languages</h3>
             <a href="/slovak">Slovak</a>
             <a href="/french">French</a>
             <a href="/polish">Polish</a>
@@ -24,14 +24,14 @@
           </div>
 
           <div class="link-group">
-            <h4>Product</h4>
+            <h3 class="link-title">Product</h3>
             <a href="/methodology">How It Works</a>
             <a href="/#pricing">Pricing</a>
             <a href="/#faq">FAQ</a>
           </div>
 
           <div class="link-group">
-            <h4>Legal</h4>
+            <h3 class="link-title">Legal</h3>
             <a href="/privacy">Privacy Policy</a>
             <a href="/terms">Terms of Service</a>
           </div>
@@ -123,12 +123,12 @@ const currentYear = computed(() => new Date().getFullYear())
   gap: 40px;
 }
 
-.link-group h4 {
+.link-title {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 16px;
 }
 
@@ -154,7 +154,7 @@ const currentYear = computed(() => new Date().getFullYear())
 
 .copyright {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
   margin: 0;
 }
 
