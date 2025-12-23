@@ -1,0 +1,22 @@
+{
+  "name": "neptis-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite-ssg build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lenis": "^1.1.18",
+    "motion": "^11.15.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.5",
+    "vite-ssg": "^0.24.0",
+    "vue-router": "^4.5.0"
+  }
+}
