@@ -6,9 +6,9 @@
           <!-- Left: Text Content -->
           <div class="hero-content">
             <h1 ref="titleRef" class="hero-title">
-              Learn Languages,
+              Learn Languages for Real,
               <br />
-              <span class="text-primary">Not Just Play Games</span>
+              <span class="text-primary">Stop Playing Games</span>
             </h1>
 
             <p ref="subtitleRef" class="hero-subtitle">
@@ -151,10 +151,10 @@ let slideInterval = null
 
 // Parallax config
 const parallaxConfig = {
-  maxRotationX: 12,
-  maxRotationY: 12,
-  easing: 0.1,
-  scale: 1.03
+  maxRotationX: 18,
+  maxRotationY: 18,
+  easing: 0.08,
+  scale: 1.06
 }
 
 let currentX = 0
@@ -401,7 +401,7 @@ onUnmounted(() => {
 }
 
 .trust-line span::before {
-  content: "checkmark ";
+  content: "✓ ";
   color: var(--color-success);
 }
 
@@ -435,9 +435,9 @@ onUnmounted(() => {
   width: 120%;
   height: 120%;
   background:
-    radial-gradient(ellipse at 30% 40%, rgba(99, 102, 241, 0.3) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 60%, rgba(139, 92, 246, 0.2) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 80%, rgba(99, 102, 241, 0.2) 0%, transparent 40%);
+    radial-gradient(ellipse at 30% 40%, rgba(228, 174, 81, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 60%, rgba(206, 148, 32, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(228, 174, 81, 0.25) 0%, transparent 40%);
   filter: blur(50px);
   pointer-events: none;
   animation: glowPulse 4s ease-in-out infinite;

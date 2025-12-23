@@ -4,7 +4,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="/" class="footer-logo">
-            <span class="logo-mark">N</span>
+            <img src="/images/logo.png" alt="Neptis" class="logo-img" />
             <span>Neptis</span>
           </a>
           <div class="tagline-poem">
@@ -94,17 +94,10 @@ const currentYear = computed(() => new Date().getFullYear())
   margin-bottom: 24px;
 }
 
-.logo-mark {
+.logo-img {
   width: 32px;
   height: 32px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: white;
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 18px;
+  object-fit: contain;
 }
 
 .tagline-poem {

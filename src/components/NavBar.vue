@@ -7,7 +7,7 @@
     <div class="nav-container">
       <!-- Logo -->
       <a href="/" class="logo">
-        <span class="logo-mark">N</span>
+        <img src="/images/logo.png" alt="Neptis" class="logo-img" />
         <span>Neptis</span>
       </a>
 
@@ -224,17 +224,10 @@ onUnmounted(() => {
   text-decoration: none;
 }
 
-.logo-mark {
+.logo-img {
   width: 32px;
   height: 32px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: white;
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 18px;
+  object-fit: contain;
 }
 
 .nav-links {
