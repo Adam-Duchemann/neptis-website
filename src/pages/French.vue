@@ -5,18 +5,18 @@
       <section class="language-hero">
         <div class="container">
           <div class="hero-content">
-            <div class="language-badge">FR</div>
+            <div class="language-badge">🇫🇷</div>
             <h1>Learn French</h1>
             <p class="hero-subtitle">
               A complete A1 curriculum designed by language experts. From "Bonjour" to confident conversations.
             </p>
             <div class="hero-stats">
               <div class="stat">
-                <span class="stat-value">20+</span>
+                <span class="stat-value">10</span>
                 <span class="stat-label">Units</span>
               </div>
               <div class="stat">
-                <span class="stat-value">100+</span>
+                <span class="stat-value">18</span>
                 <span class="stat-label">Grammar Topics</span>
               </div>
               <div class="stat">
@@ -141,13 +141,9 @@ const playAudio = () => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: white;
-  border-radius: var(--radius-xl);
-  font-size: 24px;
-  font-weight: 700;
+  width: 80px;
+  height: 80px;
+  font-size: 56px;
   margin-bottom: var(--space-lg);
 }
 

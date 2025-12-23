@@ -6,17 +6,17 @@
         <div class="container">
           <div class="hero-content">
             <div class="language-badge">🇵🇹</div>
-            <h1>Learn Portuguese</h1>
+            <h1>Learn European Portuguese</h1>
             <p class="hero-subtitle">
               A complete A1 curriculum designed by language experts. From "Bom dia" to confident conversations. European Portuguese.
             </p>
             <div class="hero-stats">
               <div class="stat">
-                <span class="stat-value">20+</span>
+                <span class="stat-value">10</span>
                 <span class="stat-label">Units</span>
               </div>
               <div class="stat">
-                <span class="stat-value">100+</span>
+                <span class="stat-value">18</span>
                 <span class="stat-label">Grammar Topics</span>
               </div>
               <div class="stat">
@@ -24,7 +24,7 @@
                 <span class="stat-label">CEFR Level</span>
               </div>
             </div>
-            <a href="https://app.neptis.tech/pt" class="btn btn-primary btn-large">Start Learning Portuguese</a>
+            <a href="https://app.neptis.tech/pt" class="btn btn-primary btn-large">Start Learning European Portuguese</a>
           </div>
         </div>
       </section>

@@ -12,11 +12,11 @@
             </p>
             <div class="hero-stats">
               <div class="stat">
-                <span class="stat-value">20+</span>
+                <span class="stat-value">17</span>
                 <span class="stat-label">Units</span>
               </div>
               <div class="stat">
-                <span class="stat-value">100+</span>
+                <span class="stat-value">18</span>
                 <span class="stat-label">Grammar Topics</span>
               </div>
               <div class="stat">
