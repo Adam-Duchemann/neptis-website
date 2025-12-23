@@ -25,16 +25,6 @@ export default defineConfig({
       }
     },
 
-    // Chunk splitting for better caching
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'vue-vendor': ['vue', 'vue-router'],
-          'animation': ['motion', 'lenis']
-        }
-      }
-    },
-
     // Asset optimization
     assetsInlineLimit: 4096,
 
