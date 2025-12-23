@@ -1,0 +1,11 @@
+# Neptis Website - robots.txt
+# https://neptis.app
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://neptis.app/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

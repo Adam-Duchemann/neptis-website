@@ -59,10 +59,11 @@
               <h3>Beginner</h3>
               <p>Understand and use familiar everyday expressions. Introduce yourself and ask basic questions.</p>
             </div>
-            <div class="cefr-card">
+            <div class="cefr-card coming-soon">
               <div class="cefr-level">A2</div>
               <h3>Elementary</h3>
               <p>Communicate in simple, routine tasks. Describe your background and immediate environment.</p>
+              <span class="badge">Coming Soon</span>
             </div>
             <div class="cefr-card coming-soon">
               <div class="cefr-level">B1</div>
