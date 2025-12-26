@@ -467,8 +467,16 @@ a:hover {
 /* Language flags - phonetic color coding showcase */
 .phonetic-showcase {
   display: flex;
-  gap: var(--space-sm);
+  gap: 8px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.phonetic-word {
+  display: flex;
+  flex-wrap: nowrap; /* Keep letters in a word together - never break mid-word */
+  gap: 2px;
 }
 
 .phonetic-letter {
@@ -480,6 +488,24 @@ a:hover {
   border-radius: var(--radius-sm);
   font-weight: 600;
   font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Responsive phonetic letters */
+@media (max-width: 480px) {
+  .phonetic-showcase {
+    gap: 6px;
+  }
+
+  .phonetic-word {
+    gap: 1px;
+  }
+
+  .phonetic-letter {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
 }
 
 /* Phonetic color system */

@@ -57,15 +57,18 @@
                   <div class="lesson-content">
                     <div class="lesson-slide" :class="{ active: currentSlide === 0 }">
                       <div class="phonetic-display">
-                        <span class="phonetic-letter phonetic-consonant">D</span>
-                        <span class="phonetic-letter phonetic-vowel">o</span>
-                        <span class="phonetic-letter phonetic-consonant">b</span>
-                        <span class="phonetic-letter phonetic-consonant">r</span>
-                        <span class="phonetic-letter phonetic-long-vowel">ý</span>
-                        <span class="phonetic-space"></span>
-                        <span class="phonetic-letter phonetic-consonant">d</span>
-                        <span class="phonetic-letter phonetic-vowel">e</span>
-                        <span class="phonetic-letter phonetic-hacik">ň</span>
+                        <span class="phonetic-word">
+                          <span class="phonetic-letter phonetic-consonant">D</span>
+                          <span class="phonetic-letter phonetic-vowel">o</span>
+                          <span class="phonetic-letter phonetic-consonant">b</span>
+                          <span class="phonetic-letter phonetic-consonant">r</span>
+                          <span class="phonetic-letter phonetic-long-vowel">ý</span>
+                        </span>
+                        <span class="phonetic-word">
+                          <span class="phonetic-letter phonetic-consonant">d</span>
+                          <span class="phonetic-letter phonetic-vowel">e</span>
+                          <span class="phonetic-letter phonetic-hacik">ň</span>
+                        </span>
                       </div>
                       <div class="lesson-translation">Good day / Hello</div>
                       <div class="lesson-type">Vocabulary</div>
@@ -526,9 +529,16 @@ onUnmounted(() => {
 /* Phonetic display */
 .phonetic-display {
   display: flex;
-  gap: 4px;
+  gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+
+.phonetic-word {
+  display: flex;
+  flex-wrap: nowrap; /* Keep letters in a word together */
+  gap: 3px;
 }
 
 .phonetic-letter {
@@ -540,10 +550,7 @@ onUnmounted(() => {
   border-radius: var(--radius-sm);
   font-weight: 600;
   font-size: 18px;
-}
-
-.phonetic-space {
-  width: 16px;
+  flex-shrink: 0;
 }
 
 .phonetic-vowel { color: #DC2626; background: #FEE2E2; }
@@ -796,6 +803,20 @@ onUnmounted(() => {
   .lesson-card {
     max-width: 100%;
     transform: none !important;
+  }
+
+  .phonetic-display {
+    gap: 6px;
+  }
+
+  .phonetic-word {
+    gap: 2px;
+  }
+
+  .phonetic-letter {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
   }
 }
 </style>

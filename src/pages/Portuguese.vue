@@ -270,14 +270,16 @@ const playAudio = () => {
 .phonetic-display {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
   margin-bottom: var(--space-lg);
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .word {
   display: flex;
-  gap: 4px;
+  flex-wrap: nowrap; /* Keep letters in a word together */
+  gap: 3px;
 }
 
 .phonetic-letter {
@@ -289,6 +291,23 @@ const playAudio = () => {
   border-radius: var(--radius-sm);
   font-weight: 600;
   font-size: 20px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .phonetic-display {
+    gap: 8px;
+  }
+
+  .word {
+    gap: 2px;
+  }
+
+  .phonetic-letter {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
 }
 
 .translation {
